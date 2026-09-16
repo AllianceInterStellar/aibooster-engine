@@ -169,7 +169,11 @@ func (s *Server) Start(stage adapter.StartStage) error {
 		}
 	case adapter.StartStateStarted:
 		if s.externalController {
-			s.checkAndDownloadExternalUI()
+			// The external web UI is optional decoration; fetching it must not gate the API.
+			// It used to be downloaded here, synchronously, before the listener was opened —
+			// so on a network where that download stalls, the control API never came up at
+			// all and every client polling it saw a tunnel with no statistics. Listen first,
+			// fetch afterwards, off the critical path.
 			var (
 				listener net.Listener
 				err      error
@@ -192,6 +196,7 @@ func (s *Server) Start(stage adapter.StartStage) error {
 					s.logger.Error("external controller serve error: ", err)
 				}
 			}()
+			go s.checkAndDownloadExternalUI()
 		}
 	}
 
