@@ -43,9 +43,13 @@ something rather than rebrand it:
   module identity, not a label — the code resolves those imports through a `replace`
   directive pointing at the vendored directory. Renaming them would mean hard-forking
   sing-box's own module, and nothing would compile until every last one matched.
-- **The `HiddifyNext/...` User-Agent** sent when fetching subscriptions. Subscription
-  servers match on it; it is a protocol token, and changing it can stop profiles
-  downloading.
+- **Protobuf-generated `.pb.go` files must never be text-substituted.** Their descriptor is
+  a string constant in which every path is preceded by a length byte; replacing a path with
+  a longer one leaves the length behind and the program panics at package init with
+  `slice bounds out of range`. To change a path that appears in one, edit `option go_package`
+  in the `.proto` and regenerate with protoc. This is why the vendored engine's module path
+  is still `github.com/sagernet/sing-box`: the rename compiles, but three generated files
+  need regenerating before the binary will start.
 - **Copyright headers and `LICENSE.md`.** GPL-3.0 requires they be preserved, and this
   repository exists to satisfy that licence, not to work around it.
 
@@ -70,6 +74,12 @@ Verify the result actually starts before trusting it:
 ```bash
 ./aibooster-core version
 ```
+
+## Copyright
+
+Copyright (C) 2026 AllianceInterStellar, for the changes listed above. Upstream's copyright
+notices are kept intact — see [COPYRIGHT.md](COPYRIGHT.md) for the modification notice
+GPL-3.0 section 5a requires, and for what we hold and what we do not.
 
 ## Licence
 

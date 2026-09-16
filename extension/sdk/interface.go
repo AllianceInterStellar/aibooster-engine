@@ -30,7 +30,10 @@ func ParseConfig(ctx context.Context, hiddifySettings *config.HiddifyOptions, co
 			fmt.Println("Error creating request:", err)
 			return nil, err
 		}
-		req.Header.Set("User-Agent", "HiddifyNext/2.3.1 ("+runtime.GOOS+") like ClashMeta v2ray sing-box")
+		// Brand first, compatibility tokens after — the same shape a browser uses. Subscription
+		// servers decide which config format to return by matching tokens in here, so the
+		// ones they match on stay; only the leading identity is ours.
+		req.Header.Set("User-Agent", "AiBooster/2.1 ("+runtime.GOOS+") like HiddifyNext/2.3.1 ClashMeta v2ray sing-box")
 		resp, err := client.Do(req)
 		if err != nil {
 			fmt.Println("Error making GET request:", err)
