@@ -1,4 +1,4 @@
-module github.com/hiddify/hiddify-core
+module github.com/AllianceInterStellar/aibooster-engine
 
 go 1.25.6
 
@@ -275,12 +275,12 @@ replace github.com/ameshkov/dnscrypt/v2 => github.com/shtorm-7/dnscrypt/v2 v2.4.
 
 replace github.com/hiddify/ray2sing => ./ray2sing
 
-replace github.com/sagernet/sing-box => ./hiddify-sing-box
+replace github.com/sagernet/sing-box => ./aibooster-sing-box
 
-replace github.com/sagernet/wireguard-go => ./hiddify-sing-box/replace/wireguard-go
+replace github.com/sagernet/wireguard-go => ./aibooster-sing-box/replace/wireguard-go
 
-replace github.com/sagernet/tailscale => ./hiddify-sing-box/replace/tailscale
+replace github.com/sagernet/tailscale => ./aibooster-sing-box/replace/tailscale
 
-replace github.com/Psiphon-Labs/quic-go => ./hiddify-sing-box/replace/psiphon-quic-go
+replace github.com/Psiphon-Labs/quic-go => ./aibooster-sing-box/replace/psiphon-quic-go
 
-replace github.com/Psiphon-Labs/psiphon-tls => ./hiddify-sing-box/replace/psiphon-tls
+replace github.com/Psiphon-Labs/psiphon-tls => ./aibooster-sing-box/replace/psiphon-tls

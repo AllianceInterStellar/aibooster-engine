@@ -14,7 +14,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/hiddify/hiddify-core/v2/config"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
 
 	"github.com/sagernet/sing-box/option"
 )

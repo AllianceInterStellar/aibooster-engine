@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/hiddify/hiddify-core/v2/config"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
 	"golang.org/x/net/proxy"
 
 	"github.com/sagernet/sing-box/option"

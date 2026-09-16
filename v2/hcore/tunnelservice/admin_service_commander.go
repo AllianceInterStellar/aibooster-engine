@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"time"
 
-	hcommon "github.com/hiddify/hiddify-core/v2/hcommon"
-	hutils "github.com/hiddify/hiddify-core/v2/hutils"
+	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
+	hutils "github.com/AllianceInterStellar/aibooster-engine/v2/hutils"
 	grpc "google.golang.org/grpc"
 )
 

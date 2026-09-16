@@ -3,9 +3,9 @@ package admin_service_vpn
 import (
 	"github.com/sagernet/sing-box/option"
 
-	ex "github.com/hiddify/hiddify-core/extension"
-	tunnelservice "github.com/hiddify/hiddify-core/v2/hcore/tunnelservice"
-	hutils "github.com/hiddify/hiddify-core/v2/hutils"
+	ex "github.com/AllianceInterStellar/aibooster-engine/extension"
+	tunnelservice "github.com/AllianceInterStellar/aibooster-engine/v2/hcore/tunnelservice"
+	hutils "github.com/AllianceInterStellar/aibooster-engine/v2/hutils"
 	C "github.com/sagernet/sing-box/constant"
 )
 
@@ -84,7 +84,7 @@ func NewAdminServiceExtension() ex.Extension {
 func init() {
 	ex.RegisterExtension(
 		ex.ExtensionFactory{
-			Id:          "github.com/hiddify/hiddify-core/extension/system/admin_service_vpn", // Package identifier
+			Id:          "github.com/AllianceInterStellar/aibooster-engine/extension/system/admin_service_vpn", // Package identifier
 			Title:       "Admin Service",                                                      // Display title of the extension
 			Description: "System Extension",                                                   // Brief description of the extension
 			Builder:     NewAdminServiceExtension,                                             // Function to create a new instance

@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"runtime/debug"
 
-	HC "github.com/hiddify/hiddify-core/v2/hcommon/constants"
+	HC "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon/constants"
 	C "github.com/sagernet/sing-box/constant"
 
 	"github.com/spf13/cobra"
@@ -30,7 +30,9 @@ func printVersion(cmd *cobra.Command, args []string) {
 		os.Stdout.WriteString(C.Version + "\n")
 		return
 	}
-	version := "hiddify-core version " + HC.Version + " hiddify-sing-box version " + C.Version + "\n\n"
+	// The engine reports itself as AI Booster. Upstream credit belongs in the licence
+	// notices, not in a version banner the product prints at users.
+	version := "aibooster-core version " + HC.Version + " (engine " + C.Version + ")\n\n"
 	version += "Environment: " + runtime.Version() + " " + runtime.GOOS + "/" + runtime.GOARCH + "\n"
 
 	var tags string

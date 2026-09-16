@@ -8,7 +8,7 @@ package tunnelservice
 
 import (
 	context "context"
-	hcommon "github.com/hiddify/hiddify-core/v2/hcommon"
+	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"

@@ -3,8 +3,8 @@ package hcore
 import (
 	"context"
 
-	"github.com/hiddify/hiddify-core/v2/hcommon"
-	"github.com/hiddify/hiddify-core/v2/service_manager"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/service_manager"
 )
 
 var (

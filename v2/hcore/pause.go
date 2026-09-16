@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	hcommon "github.com/hiddify/hiddify-core/v2/hcommon"
+	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
 	C "github.com/sagernet/sing-box/constant"
 )
 

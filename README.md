@@ -1,99 +1,77 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/hiddify/hiddify.com/refs/heads/main/docs/assets/hiddify-app-logo.svg" alt="Hiddify Logo" width="128">
-</p>
+# AI Booster engine — corresponding source
 
-<h1 align="center">Hiddify Core</h1>
+This repository is the **complete corresponding source** for the tunnelling engine that AI
+Booster distributes as `aibooster-core`. It exists so that anyone who receives one of those
+binaries can rebuild it, which GPL-3.0 requires of us.
 
-<p align="center">
-  <strong>The Ultimate Universal Proxy Platform</strong><br>
-  A powerful, high-performance core for the Hiddify ecosystem, supporting all major protocols and platforms.
-</p>
+It is not upstream. It is upstream **plus our changes**, and it is published under the same
+licence as the code it derives from.
 
-<p align="center">
-  <a href="https://hiddify.com"><img src="https://img.shields.io/badge/Website-hiddify.com-blue?style=flat-square" alt="Website"></a>
-  <a href="https://t.me/hiddify"><img src="https://img.shields.io/badge/Telegram-Join-blue?style=flat-square&logo=telegram" alt="Telegram"></a>
-  <img src="https://img.shields.io/github/license/hiddify/hiddify-core?style=flat-square" alt="License">
-  <img src="https://img.shields.io/github/v/release/hiddify/hiddify-core?style=flat-square" alt="Version">
-</p>
+## Where it comes from
 
----
+- [hiddify-core](https://github.com/hiddify/hiddify-core) v4.1.0 — GPL-3.0 with additional
+  terms under section 7
+- [hiddify-sing-box](https://github.com/hiddify/hiddify-sing-box) at `0a02b772`, itself
+  derived from [sing-box](https://github.com/SagerNet/sing-box) — GPL-3.0-or-later
 
-## 🚀 Quick Setup
+Submodules are checked in as plain directories rather than left as git submodules, so that
+this tree builds with nothing but a clone and a Go toolchain. The submodule commits the
+tree was taken from are recorded in `SUBMODULE-COMMITS.txt`.
 
-Install `hiddify-core` on any Linux platform (Ubuntu, Debian, CentOS, OpenWrt, and more) with a single command:
+## Our changes
+
+- `v2/config/builder.go` — a rule-set base URL of our own, and a default balancer strategy
+- `aibooster-sing-box/experimental/clashapi/server.go` — the Clash API's history store is
+  built explicitly rather than looked up per outbound, which is why proxy health readings
+  no longer come back empty while traffic is flowing
+- `aibooster-sing-box/common/monitoring/outbound_monitoring.go` — outbound monitoring changes
+- `aibooster-sing-box/daemon/*`, `aibooster-sing-box/experimental/libbox/command_types.go` —
+  service and command-surface changes
+- `aibooster-sing-box/.gitmodules` — submodule URLs rewritten from SSH to HTTPS, so the tree
+  can be cloned without credentials
+
+## Naming
+
+This is a fork, so it carries our names where the names are ours to choose: the Go module
+path, the vendored engine directory, the binaries the Makefile produces, and every string
+the program prints at a user.
+
+Three things deliberately keep upstream's names, because changing them would break
+something rather than rebrand it:
+
+- **`github.com/sagernet/...` import paths** (5,955 of them). That is another project's
+  module identity, not a label — the code resolves those imports through a `replace`
+  directive pointing at the vendored directory. Renaming them would mean hard-forking
+  sing-box's own module, and nothing would compile until every last one matched.
+- **The `HiddifyNext/...` User-Agent** sent when fetching subscriptions. Subscription
+  servers match on it; it is a protocol token, and changing it can stop profiles
+  downloading.
+- **Copyright headers and `LICENSE.md`.** GPL-3.0 requires they be preserved, and this
+  repository exists to satisfy that licence, not to work around it.
+
+## Building
+
+Requires **Go 1.26.1**. Older toolchains produce a binary that panics before `main()`: a
+vendored TLS package asserts at init that its own struct layout matches `crypto/tls`, and
+that assertion is version-specific.
 
 ```bash
-bash <(curl https://i.hiddify.com/core)
-```
-or 
-```bash
-bash <(curl -Ls https://raw.githubusercontent.com/hiddify/hiddify-core/main/installer.sh)
+go build -trimpath -ldflags="-w -s -checklinkname=0 -buildid=" \
+  -tags "with_gvisor,with_quic,with_wireguard,with_utls,with_clash_api,with_grpc,with_awg,tfogo_checklinkname0,with_conntrack,with_dhcp" \
+  -o aibooster-core ./cmd/main
 ```
 
-> [!NOTE]
-> This script automatically detects your OS and architecture, installs the appropriate binary, and configures the service manager (Systemd or Procd).
+`with_naive_outbound` is omitted: it links a prebuilt `libcronet.a` using CREL relocations,
+which binutils older than 2.43 cannot read. Add it back on a newer toolchain if you want the
+naive protocol.
 
----
-
-## ✨ Key Features
-
-- **🌐 Multi-Protocol Support**: Naive, Mieru, Hysteria, SOCKS, Shadowsocks, ShadowTLS, Tor, Trojan, VLess, VMess, WireGuard, and more.
-- **📱 Cross-Platform**: Powering Hiddify on Android, macOS, Linux, Windows, and iOS.
-- **🔌 Extension System**: Powerful third-party extension capability to modify configs and add custom features.
-- **⚡ High Performance**: Optimized core built on top of `sing-box` for maximum speed and stability.
-- **🏠 Router Ready**: Native support for OpenWrt and other router platforms.
-
----
-
-## 🛠 Installation Methods
-
-### 🐳 Docker
-Quickly deploy as a containerized service:
+Verify the result actually starts before trusting it:
 
 ```bash
-# Pull image
-docker pull ghcr.io/hiddify/hiddify-core:latest
-
-# Or using Docker Compose
-git clone https://github.com/hiddify/hiddify-core
-cd hiddify-core/docker
-docker-compose up -d
+./aibooster-core version
 ```
 
-### 📶 OpenWrt
-For manual installation or advanced configuration on OpenWrt, refer to our [OpenWrt Setup Guide](platform/wrt/README.md).
+## Licence
 
----
-
-## Extension
-
-An extension is something that can be added to hiddify application by a third party. It will add capability to modify configs, do some extra action, show and receive data from users.
-
-This extension will be shown in all Hiddify Platforms such as Android/macOS/Linux/Windows/iOS
-
-[Create an extension](https://github.com/hiddify/hiddify-app-example-extension)
-
-Features and Road map:
-
-- [x] Add Third Party Extension capability
-- [x] Test Extension from Browser without any dependency to android/mac/.... `./cmd.sh extension` the open browser `https://127.0.0.1:12346`
-- [x] Show Custom UI from Extension `github.com/hiddify/hiddify-core/extension.UpdateUI()` 
-- [x] Show Custom Dialog from Extension `github.com/hiddify/hiddify-core/extension.ShowDialog()`
-- [x] Show Alert Dialog from Extension `github.com/hiddify/hiddify-core/extension.ShowMessage()` 
-- [x] Get Data from UI `github.com/hiddify/hiddify-core/extension.SubmitData()` 
-- [x] Save Extension Data from `e.Base.Data`
-- [x] Load Extension Data to `e.Base.Data`
-- [x] Disable / Enable Extension 
-- [x] Update user proxies before connecting `github.com/hiddify/hiddify-core/extension.BeforeAppConnect()` 
-- [x] Run Tiny Independent Instance  `github.com/hiddify/hiddify-core/extension/sdk.RunInstance()` 
-- [x] Parse Any type of configs/url  `github.com/hiddify/hiddify-core/extension/sdk.ParseConfig()` 
-- [ ] ToDo: Add Support for MultiLanguage Interface
-- [ ] ToDo: Custom Extension Outbound
-- [ ] ToDo: Custom Extension Inbound
-- [ ] ToDo: Custom Extension ProxyConfig
- 
- Demo Screenshots from HTML:
- 
- <img width="531" alt="image" src="https://github.com/user-attachments/assets/0fbef76f-896f-4c45-a6b8-7a2687c47013">
- <img width="531" alt="image" src="https://github.com/user-attachments/assets/15bccfa0-d03e-4354-9368-241836d82948">
-
+GPL-3.0, with upstream's additional section 7 terms — see `LICENSE.md`, which is upstream's
+own and is reproduced unchanged.

@@ -44,7 +44,7 @@ func ExecuteCmd(executablePath string, background bool, args ...string) (string,
 	}
 
 	commands := [][]string{
-		{"cocoasudo", "--prompt=Hiddify needs root for tunneling.", executablePath},
+		{"cocoasudo", "--prompt=AI Booster needs root for tunneling.", executablePath},
 		{"gksu", executablePath},
 		{"pkexec", executablePath},
 		{"xterm", "-e", "sudo", executablePath, strings.Join(args, " ")},

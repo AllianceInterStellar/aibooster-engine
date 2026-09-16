@@ -3,7 +3,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/hiddify/hiddify-core/v2/hutils"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/hutils"
 	"github.com/spf13/cobra"
 )
 

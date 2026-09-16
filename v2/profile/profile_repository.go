@@ -6,11 +6,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/hiddify/hiddify-core/v2/config"
-	"github.com/hiddify/hiddify-core/v2/db"
-	"github.com/hiddify/hiddify-core/v2/hcommon"
-	"github.com/hiddify/hiddify-core/v2/hcommon/request"
-	hcore "github.com/hiddify/hiddify-core/v2/hcore"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/db"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/hcommon/request"
+	hcore "github.com/AllianceInterStellar/aibooster-engine/v2/hcore"
 	"github.com/sagernet/sing-box/option"
 )
 

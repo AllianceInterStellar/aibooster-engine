@@ -1,7 +1,7 @@
 package hcore
 
 import (
-	"github.com/hiddify/hiddify-core/v2/service_manager"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/service_manager"
 	daemon "github.com/sagernet/sing-box/daemon"
 	"github.com/sagernet/sing-box/log"
 )

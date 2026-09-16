@@ -10,8 +10,8 @@ import (
 	"github.com/sagernet/sing-box/daemon"
 	"github.com/sagernet/sing-box/option"
 
-	hcommon "github.com/hiddify/hiddify-core/v2/hcommon"
-	"github.com/hiddify/hiddify-core/v2/hcore"
+	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/hcore"
 )
 
 type TunnelService struct {

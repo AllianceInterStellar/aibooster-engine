@@ -30,7 +30,7 @@ func GenerateCertificatePair() (*CertificatePair, error) {
 	certTemplate := x509.Certificate{
 		SerialNumber: big.NewInt(1), // A unique serial number for the certificate
 		Subject: pkix.Name{
-			Organization: []string{"Hiddify, Inc."},
+			Organization: []string{"AllianceInterStellar"},
 			CommonName:   "Hiddify",
 		},
 		NotBefore: time.Now(),

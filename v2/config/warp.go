@@ -12,7 +12,7 @@ import (
 	"github.com/sagernet/wireguard-go/hiddify"
 
 	// "github.com/bepass-org/wireguard-go/warp"
-	"github.com/hiddify/hiddify-core/v2/db"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/db"
 
 	"github.com/sagernet/sing-box/option"
 	T "github.com/sagernet/sing-box/option"

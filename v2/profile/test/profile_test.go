@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hiddify/hiddify-core/v2/profile"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/profile"
 	"github.com/sagernet/sing-box/experimental/libbox"
 )
 

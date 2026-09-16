@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hiddify/hiddify-core/v2/config"
-	hcommon "github.com/hiddify/hiddify-core/v2/hcommon"
+	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
+	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
 )
 
 func (s *CoreService) Stop(ctx context.Context, empty *hcommon.Empty) (*CoreInfoResponse, error) {

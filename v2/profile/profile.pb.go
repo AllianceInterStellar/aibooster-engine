@@ -7,7 +7,7 @@
 package profile
 
 import (
-	hiddifyoptions "github.com/hiddify/hiddify-core/v2/hiddifyoptions"
+	hiddifyoptions "github.com/AllianceInterStellar/aibooster-engine/v2/hiddifyoptions"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

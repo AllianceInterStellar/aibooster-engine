@@ -5,7 +5,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	hcore "github.com/hiddify/hiddify-core/v2/hcore"
+	hcore "github.com/AllianceInterStellar/aibooster-engine/v2/hcore"
 	"github.com/sagernet/sing-box/experimental/libbox"
 	"github.com/sagernet/sing-box/log"
 	"github.com/spf13/cobra"

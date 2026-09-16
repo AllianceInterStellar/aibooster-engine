@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/hiddify/hiddify-core/cmd"
+	"github.com/AllianceInterStellar/aibooster-engine/cmd"
 )
 
 // type UpdateRequest struct {
