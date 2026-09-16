@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/log"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 )
 
 func (s *CoreService) Restart(ctx context.Context, in *StartRequest) (*CoreInfoResponse, error) {

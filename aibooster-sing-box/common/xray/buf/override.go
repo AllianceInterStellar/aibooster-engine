@@ -1,7 +1,7 @@
 package buf
 
 import (
-	"github.com/sagernet/sing-box/common/xray/net"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/net"
 )
 
 type EndpointOverrideReader struct {

@@ -6,8 +6,8 @@ import (
 	"context"
 	"net/netip"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 )
 
 var _ Searcher = (*linuxSearcher)(nil)

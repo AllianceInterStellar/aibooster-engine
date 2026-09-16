@@ -11,7 +11,7 @@ import (
 	"github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
 	"github.com/AllianceInterStellar/aibooster-engine/v2/hcommon/request"
 	hcore "github.com/AllianceInterStellar/aibooster-engine/v2/hcore"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 const (

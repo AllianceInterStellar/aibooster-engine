@@ -6,7 +6,7 @@ import (
 	_ "net/http/pprof"
 
 	_ "github.com/sagernet/gomobile"
-	"github.com/sagernet/sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
 )
 
 type SetupOptions struct {

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package daemon;
-option go_package = "github.com/sagernet/sing-box/daemon";
+option go_package = "github.com/AllianceInterStellar/aibooster-sing-box/daemon";
 
 import "google/protobuf/empty.proto";
 

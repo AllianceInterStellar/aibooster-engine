@@ -1,9 +1,9 @@
 package xhttp
 
 import (
-	common "github.com/sagernet/sing-box/common/xray"
-	"github.com/sagernet/sing-box/common/xray/buf"
-	"github.com/sagernet/sing-box/common/xray/pipe"
+	common "github.com/AllianceInterStellar/aibooster-sing-box/common/xray"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/buf"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/pipe"
 )
 
 // A wrapper around pipe that ensures the size limit is exactly honored.

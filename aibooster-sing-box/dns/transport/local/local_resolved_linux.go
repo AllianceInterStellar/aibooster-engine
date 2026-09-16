@@ -9,9 +9,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/sagernet/sing-box/adapter"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/service/resolved"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/service/resolved"
 	"github.com/sagernet/sing-tun"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/control"

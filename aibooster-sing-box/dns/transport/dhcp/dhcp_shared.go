@@ -7,8 +7,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/sagernet/sing-box/dns"
-	"github.com/sagernet/sing-box/dns/transport"
+	"github.com/AllianceInterStellar/aibooster-sing-box/dns"
+	"github.com/AllianceInterStellar/aibooster-sing-box/dns/transport"
 	"github.com/sagernet/sing/common/buf"
 	E "github.com/sagernet/sing/common/exceptions"
 	M "github.com/sagernet/sing/common/metadata"

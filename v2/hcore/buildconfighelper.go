@@ -9,9 +9,9 @@ import (
 	"github.com/AllianceInterStellar/aibooster-engine/v2/db"
 	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
 	hutils "github.com/AllianceInterStellar/aibooster-engine/v2/hutils"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/experimental/libbox"
-	"github.com/sagernet/sing-box/option"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func BuildConfigJson(ctx context.Context, in *StartRequest) (string, error) {

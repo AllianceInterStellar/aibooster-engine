@@ -3,7 +3,7 @@ package daemon
 import (
 	"sync"
 
-	"github.com/sagernet/sing-box/experimental/deprecated"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/deprecated"
 	"github.com/sagernet/sing/common"
 )
 

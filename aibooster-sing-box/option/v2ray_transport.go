@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"strings"
 
-	Xbadoption "github.com/sagernet/sing-box/common/xray/json/badoption"
-	C "github.com/sagernet/sing-box/constant"
+	Xbadoption "github.com/AllianceInterStellar/aibooster-sing-box/common/xray/json/badoption"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/json"
 	"github.com/sagernet/sing/common/json/badjson"

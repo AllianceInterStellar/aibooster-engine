@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"strings"
 
-	_ "github.com/sagernet/sing-box/include"
-	"github.com/sagernet/sing-box/option"
-	T "github.com/sagernet/sing-box/option"
+	_ "github.com/AllianceInterStellar/aibooster-sing-box/include"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

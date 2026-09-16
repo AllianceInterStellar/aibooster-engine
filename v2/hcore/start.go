@@ -10,10 +10,10 @@ import (
 	"github.com/AllianceInterStellar/aibooster-engine/v2/db"
 	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
 	service_manager "github.com/AllianceInterStellar/aibooster-engine/v2/service_manager"
-	"github.com/sagernet/sing-box/adapter"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/experimental/libbox"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 	"github.com/sagernet/sing/service"
 )
 

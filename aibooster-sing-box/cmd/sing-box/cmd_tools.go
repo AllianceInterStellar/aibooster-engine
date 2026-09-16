@@ -4,7 +4,7 @@ import (
 	"errors"
 	"os"
 
-	"github.com/sagernet/sing-box"
+	"github.com/AllianceInterStellar/aibooster-sing-box"
 	E "github.com/sagernet/sing/common/exceptions"
 	N "github.com/sagernet/sing/common/network"
 

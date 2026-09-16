@@ -7,9 +7,9 @@ import (
 	"net"
 	"os"
 
-	"github.com/sagernet/sing-box/common/badtls"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/badtls"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 	"github.com/sagernet/sing/common/logger"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"

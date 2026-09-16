@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/sagernet/sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
 	"golang.org/x/sys/unix"
 )
 

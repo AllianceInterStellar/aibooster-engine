@@ -4,7 +4,7 @@ go 1.25.6
 
 require (
 	github.com/sagernet/sing v0.8.0-beta.11
-	github.com/sagernet/sing-box v1.13.0
+	github.com/AllianceInterStellar/aibooster-sing-box v1.13.0
 	github.com/sagernet/wireguard-go v0.0.2-beta.1.0.20250917110311-16510ac47288
 	github.com/spf13/cobra v1.10.2
 // github.com/xtls/xray-core v0.0.0-00010101000000-000000000000
@@ -232,8 +232,8 @@ require (
 	tailscale.com v1.58.2 // indirect
 )
 
-//replace github.com/sagernet/sing-box => github.com/hiddify/aibooster-sing-box v1.13.0-rc.2.0.20260215114412-cabace8fd3ce
-replace github.com/sagernet/sing-box => ../aibooster-sing-box
+//replace github.com/AllianceInterStellar/aibooster-sing-box => github.com/hiddify/aibooster-sing-box v1.13.0-rc.2.0.20260215114412-cabace8fd3ce
+replace github.com/AllianceInterStellar/aibooster-sing-box => ../aibooster-sing-box
 
 // replace github.com/xtls/xray-core => github.com/hiddify/xray-core v0.0.0-20260124181826-59e6569c13e9
 replace github.com/sagernet/wireguard-go => github.com/hiddify/wireguard-go v0.0.0-20260202221310-b94beca5cb72

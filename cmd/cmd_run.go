@@ -2,7 +2,7 @@ package cmd
 
 import (
 	hcore "github.com/AllianceInterStellar/aibooster-engine/v2/hcore"
-	"github.com/sagernet/sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
 
 	"github.com/spf13/cobra"
 )

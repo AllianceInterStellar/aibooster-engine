@@ -1,12 +1,12 @@
 package admin_service_vpn
 
 import (
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 
 	ex "github.com/AllianceInterStellar/aibooster-engine/extension"
 	tunnelservice "github.com/AllianceInterStellar/aibooster-engine/v2/hcore/tunnelservice"
 	hutils "github.com/AllianceInterStellar/aibooster-engine/v2/hutils"
-	C "github.com/sagernet/sing-box/constant"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
 )
 
 type AdminServiceExtensionData struct {

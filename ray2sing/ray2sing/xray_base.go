@@ -1,7 +1,7 @@
 package ray2sing
 
 import (
-	T "github.com/sagernet/sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 	// Mandatory features. Can't remove unless there are replacements.
 	// _ "github.com/xtls/xray-core/app/dispatcher"
 	// _ "github.com/xtls/xray-core/app/proxyman/inbound"

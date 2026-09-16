@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 
 	"github.com/spf13/cobra"
 )

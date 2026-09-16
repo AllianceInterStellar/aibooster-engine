@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
-	"github.com/sagernet/sing-box/common/monitoring"
-	"github.com/sagernet/sing-box/daemon"
-	"github.com/sagernet/sing-box/experimental/libbox"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/monitoring"
+	"github.com/AllianceInterStellar/aibooster-sing-box/daemon"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 )
 
 type HiddifyInstance struct {

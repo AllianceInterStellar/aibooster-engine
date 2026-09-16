@@ -10,9 +10,9 @@ import (
 	"net/http/httptrace"
 	"sync"
 
-	common "github.com/sagernet/sing-box/common/xray"
-	"github.com/sagernet/sing-box/common/xray/signal/done"
-	"github.com/sagernet/sing-box/option"
+	common "github.com/AllianceInterStellar/aibooster-sing-box/common/xray"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/signal/done"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 // interface to abstract between use of browser dialer, vs net/http

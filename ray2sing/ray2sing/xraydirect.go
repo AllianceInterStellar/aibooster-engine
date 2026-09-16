@@ -3,7 +3,7 @@ package ray2sing
 import (
 	"strings"
 
-	T "github.com/sagernet/sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func DirectXray(vlessURL string) (*T.Outbound, error) {

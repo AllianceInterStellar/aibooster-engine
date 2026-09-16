@@ -3,15 +3,15 @@ package hcore
 import (
 	"context"
 
-	box "github.com/sagernet/sing-box"
+	box "github.com/AllianceInterStellar/aibooster-sing-box"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/urltest"
-	"github.com/sagernet/sing-box/daemon"
-	"github.com/sagernet/sing-box/experimental/clashapi"
-	"github.com/sagernet/sing-box/experimental/clashapi/trafficontrol"
-	"github.com/sagernet/sing-box/experimental/libbox"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/urltest"
+	"github.com/AllianceInterStellar/aibooster-sing-box/daemon"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/clashapi"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/clashapi/trafficontrol"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func NewService(ctx context.Context, options option.Options) (*daemon.StartedService, error) {

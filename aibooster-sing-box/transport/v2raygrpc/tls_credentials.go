@@ -5,8 +5,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/sagernet/sing-box/common/tls"
-	internal_credentials "github.com/sagernet/sing-box/transport/v2raygrpc/credentials"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/tls"
+	internal_credentials "github.com/AllianceInterStellar/aibooster-sing-box/transport/v2raygrpc/credentials"
 
 	"google.golang.org/grpc/credentials"
 )

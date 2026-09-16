@@ -1,7 +1,7 @@
 package pipe
 
 import (
-	"github.com/sagernet/sing-box/common/xray/buf"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/buf"
 )
 
 // Writer is a buf.Writer that writes data into a pipe.

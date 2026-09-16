@@ -3,8 +3,8 @@ package buf
 import (
 	"io"
 
-	"github.com/sagernet/sing-box/common/xray/bytespool"
-	"github.com/sagernet/sing-box/common/xray/net"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/bytespool"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/net"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

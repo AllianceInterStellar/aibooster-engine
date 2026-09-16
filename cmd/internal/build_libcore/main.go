@@ -9,7 +9,7 @@ import (
 
 	"github.com/AllianceInterStellar/aibooster-engine/cmd/internal/build_shared"
 	_ "github.com/sagernet/gomobile"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 	"github.com/sagernet/sing/common/rw"
 )
 
@@ -174,7 +174,7 @@ func buildAndroid() {
 	args = append(args, strings.Join(sharedTags, ","))
 
 	output := filepath.Join("bin", libName+".aar")
-	args = append(args, "-o", output, "github.com/sagernet/sing-box/experimental/libbox", "./mobile")
+	args = append(args, "-o", output, "github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox", "./mobile")
 
 	command := exec.Command(build_shared.GoBinPath+"/gomobile", args...)
 	command.Stdout = os.Stdout
@@ -202,7 +202,7 @@ func buildIOS() {
 	args = append(args, strings.Join(tags, ","))
 
 	output := filepath.Join("bin", "Libhcore.xcframework")
-	args = append(args, "-o", output, "github.com/sagernet/sing-box/experimental/libbox", "./mobile")
+	args = append(args, "-o", output, "github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox", "./mobile")
 
 	command := exec.Command(build_shared.GoBinPath+"/gomobile", args...)
 	command.Stdout = os.Stdout

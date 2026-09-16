@@ -2,7 +2,7 @@
 
 package tailscale
 
-import "github.com/sagernet/sing-box/adapter"
+import "github.com/AllianceInterStellar/aibooster-sing-box/adapter"
 
 func setAndroidProtectFunc(platformInterface adapter.PlatformInterface) {
 }

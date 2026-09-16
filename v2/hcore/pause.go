@@ -5,7 +5,7 @@ import (
 	"time"
 
 	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
-	C "github.com/sagernet/sing-box/constant"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
 )
 
 func (s *CoreService) Close(ctx context.Context, closeReq *CloseRequest) (*hcommon.Empty, error) {

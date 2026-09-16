@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/sagernet/sing-box/common/xray/crypto"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/crypto"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

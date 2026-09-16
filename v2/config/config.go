@@ -3,8 +3,8 @@ package config
 import (
 	context "context"
 
-	"github.com/sagernet/sing-box/experimental/libbox"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 type ReadOptions struct {

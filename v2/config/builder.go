@@ -14,9 +14,9 @@ import (
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/hutils"
 	mDNS "github.com/miekg/dns"
-	C "github.com/sagernet/sing-box/constant"
-	sdns "github.com/sagernet/sing-box/dns"
-	"github.com/sagernet/sing-box/option"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	sdns "github.com/AllianceInterStellar/aibooster-sing-box/dns"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 	"github.com/sagernet/sing/common/json/badoption"
 	"github.com/sagernet/wireguard-go/hiddify"
 )

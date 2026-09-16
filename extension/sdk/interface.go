@@ -10,7 +10,7 @@ import (
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
 	hcore "github.com/AllianceInterStellar/aibooster-engine/v2/hcore"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func RunInstance(ctx context.Context, hiddifySettings *config.HiddifyOptions, singconfig *option.Options) (*hcore.HiddifyInstance, error) {

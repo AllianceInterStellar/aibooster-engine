@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	C "github.com/sagernet/sing-box/constant"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
 	"github.com/sagernet/sing-tun"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"

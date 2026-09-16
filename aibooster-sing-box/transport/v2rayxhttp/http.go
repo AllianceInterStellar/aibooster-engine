@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/sagernet/sing-box/common/xray/net"
-	"github.com/sagernet/sing-box/common/xray/signal/done"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/net"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/signal/done"
 )
 
 type httpSession struct {

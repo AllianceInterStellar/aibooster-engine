@@ -6,8 +6,8 @@ import (
 	"github.com/AllianceInterStellar/aibooster-engine/extension/ui"
 	"github.com/AllianceInterStellar/aibooster-engine/v2/db"
 	"github.com/jellydator/validation"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 type Extension interface {

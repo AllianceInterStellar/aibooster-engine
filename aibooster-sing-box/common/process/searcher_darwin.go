@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/sagernet/sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
 	N "github.com/sagernet/sing/common/network"
 
 	"golang.org/x/sys/unix"

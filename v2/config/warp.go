@@ -8,14 +8,14 @@ import (
 	"os"
 
 	"github.com/bepass-org/warp-plus/warp"
-	C "github.com/sagernet/sing-box/constant"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
 	"github.com/sagernet/wireguard-go/hiddify"
 
 	// "github.com/bepass-org/wireguard-go/warp"
 	"github.com/AllianceInterStellar/aibooster-engine/v2/db"
 
-	"github.com/sagernet/sing-box/option"
-	T "github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 type SingboxConfig struct {

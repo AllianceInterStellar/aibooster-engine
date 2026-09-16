@@ -32,24 +32,28 @@ tree was taken from are recorded in `SUBMODULE-COMMITS.txt`.
 
 ## Naming
 
-This is a fork, so it carries our names where the names are ours to choose: the Go module
-path, the vendored engine directory, the binaries the Makefile produces, and every string
-the program prints at a user.
+This is a fork, so it carries our names where the names are ours to choose: **both** module
+paths — this one and the vendored engine's — the engine directory, the binaries the Makefile
+produces, and every string the program prints at a user.
 
-Three things deliberately keep upstream's names, because changing them would break
-something rather than rebrand it:
+Two things deliberately keep upstream's names, because changing them would break something
+rather than rebrand it:
 
 - **`github.com/sagernet/...` import paths** (5,955 of them). That is another project's
   module identity, not a label — the code resolves those imports through a `replace`
   directive pointing at the vendored directory. Renaming them would mean hard-forking
   sing-box's own module, and nothing would compile until every last one matched.
-- **Protobuf-generated `.pb.go` files must never be text-substituted.** Their descriptor is
-  a string constant in which every path is preceded by a length byte; replacing a path with
-  a longer one leaves the length behind and the program panics at package init with
-  `slice bounds out of range`. To change a path that appears in one, edit `option go_package`
-  in the `.proto` and regenerate with protoc. This is why the vendored engine's module path
-  is still `github.com/sagernet/sing-box`: the rename compiles, but three generated files
-  need regenerating before the binary will start.
+- **`github.com/sagernet/...` for everything except sing-box itself** — sing-dns, sing-tun,
+  gvisor, cronet-go and the rest are genuinely other people's modules, pulled from their own
+  repositories. Only the engine we vendor and modify carries our name.
+- **The descriptor blobs inside three `.pb.go` files.** Protobuf's generated descriptor is a
+  string constant in which every path is preceded by a length byte, so replacing a path with
+  a longer one leaves the length stale and the program panics at package init with
+  `slice bounds out of range` — while compiling perfectly. Those three files are therefore
+  left byte-for-byte alone; nothing imports through them, so the rename does not need them.
+  Their `.proto` sources do carry our path, so a regeneration with protoc will bring the
+  descriptors along; until then they still describe themselves by the old name, which is
+  metadata and is not used to resolve anything at runtime.
 - **Copyright headers and `LICENSE.md`.** GPL-3.0 requires they be preserved, and this
   repository exists to satisfy that licence, not to work around it.
 

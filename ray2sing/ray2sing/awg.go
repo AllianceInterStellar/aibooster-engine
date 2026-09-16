@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	C "github.com/sagernet/sing-box/constant"
-	T "github.com/sagernet/sing-box/option"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 	"github.com/sagernet/sing/common/json/badoption"
 )
 

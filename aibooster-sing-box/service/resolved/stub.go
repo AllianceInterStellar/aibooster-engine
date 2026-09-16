@@ -5,12 +5,12 @@ package resolved
 import (
 	"context"
 
-	"github.com/sagernet/sing-box/adapter"
-	boxService "github.com/sagernet/sing-box/adapter/service"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/dns"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	boxService "github.com/AllianceInterStellar/aibooster-sing-box/adapter/service"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/dns"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

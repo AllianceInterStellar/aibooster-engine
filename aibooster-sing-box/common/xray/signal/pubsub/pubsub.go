@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/sagernet/sing-box/common/xray"
-	"github.com/sagernet/sing-box/common/xray/signal/done"
-	"github.com/sagernet/sing-box/common/xray/task"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/signal/done"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/task"
 )
 
 type Subscriber struct {

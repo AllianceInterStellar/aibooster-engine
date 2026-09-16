@@ -11,14 +11,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/urltest"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/urltest"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/service"
 
-	"github.com/sagernet/sing-box/hiddify/ipinfo"
+	"github.com/AllianceInterStellar/aibooster-sing-box/hiddify/ipinfo"
 	"github.com/sagernet/sing/common/x/list"
 
 	"github.com/sagernet/sing/common"

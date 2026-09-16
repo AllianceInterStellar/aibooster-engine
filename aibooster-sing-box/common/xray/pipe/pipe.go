@@ -1,8 +1,8 @@
 package pipe
 
 import (
-	"github.com/sagernet/sing-box/common/xray/signal"
-	"github.com/sagernet/sing-box/common/xray/signal/done"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/signal"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/signal/done"
 )
 
 // Option for creating new Pipes.

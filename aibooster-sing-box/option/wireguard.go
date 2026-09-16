@@ -3,7 +3,7 @@ package option
 import (
 	"net/netip"
 
-	C "github.com/sagernet/sing-box/constant"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
 	"github.com/sagernet/sing/common/json/badoption"
 	hiddify "github.com/sagernet/wireguard-go/hiddify"
 )

@@ -1,4 +1,4 @@
-module github.com/sagernet/sing-box
+module github.com/AllianceInterStellar/aibooster-sing-box
 
 go 1.24.7
 

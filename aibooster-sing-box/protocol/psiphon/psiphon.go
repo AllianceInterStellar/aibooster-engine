@@ -9,7 +9,7 @@ import (
 	"os"
 
 	"github.com/Psiphon-Labs/psiphon-tunnel-core/psiphon"
-	"github.com/sagernet/sing-box/common/monitoring"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/monitoring"
 	"github.com/sagernet/sing/common/logger"
 )
 

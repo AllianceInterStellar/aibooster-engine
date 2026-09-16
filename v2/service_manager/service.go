@@ -1,7 +1,7 @@
 package service_manager
 
 import (
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 type HService interface {

@@ -5,9 +5,9 @@ import (
 	"runtime/debug"
 	"time"
 
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/experimental/locale"
-	"github.com/sagernet/sing-box/log"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/locale"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 	"github.com/sagernet/sing/common/byteformats"
 )
 

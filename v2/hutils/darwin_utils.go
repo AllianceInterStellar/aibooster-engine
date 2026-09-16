@@ -2,7 +2,7 @@
 
 package hutils
 
-import "github.com/sagernet/sing-box/experimental/libbox"
+import "github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
 
 func RedirectStderr(path string) error {
 	return libbox.RedirectStderr(path)

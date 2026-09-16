@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/db"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/service_manager"
 )

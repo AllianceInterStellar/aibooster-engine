@@ -5,10 +5,10 @@ import (
 	"net"
 	"os"
 
-	"github.com/sagernet/sing-box/common/badtls"
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/badtls"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 	aTLS "github.com/sagernet/sing/common/tls"
 )
 

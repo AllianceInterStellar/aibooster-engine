@@ -3,7 +3,7 @@ package cmd
 import (
 	"context"
 
-	box "github.com/sagernet/sing-box"
+	box "github.com/AllianceInterStellar/aibooster-sing-box"
 )
 
 // var commandCheck = &cobra.Command{

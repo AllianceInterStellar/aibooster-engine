@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
-	"github.com/sagernet/sing-box/experimental/libbox"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 	"github.com/spf13/cobra"
 )
 

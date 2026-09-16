@@ -5,9 +5,9 @@ package local
 import (
 	"context"
 
-	"github.com/sagernet/sing-box/dns"
-	"github.com/sagernet/sing-box/dns/transport/dhcp"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/dns"
+	"github.com/AllianceInterStellar/aibooster-sing-box/dns/transport/dhcp"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 	N "github.com/sagernet/sing/common/network"
 )
 

@@ -9,9 +9,9 @@ import (
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
 	hcore "github.com/AllianceInterStellar/aibooster-engine/v2/hcore"
-	"github.com/sagernet/sing-box/experimental/libbox"
-	"github.com/sagernet/sing-box/log"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 
 	"github.com/spf13/cobra"
 )

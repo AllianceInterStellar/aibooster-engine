@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

@@ -3,7 +3,7 @@ package hcore
 import (
 	"fmt"
 
-	"github.com/sagernet/sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
 )
 
 var _ libbox.PlatformInterface = (*MobilePlatformInterface)(nil)

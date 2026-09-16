@@ -3,9 +3,9 @@ package buf
 import (
 	"io"
 
-	"github.com/sagernet/sing-box/common/xray"
-	"github.com/sagernet/sing-box/common/xray/errors"
-	"github.com/sagernet/sing-box/common/xray/serial"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/errors"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/serial"
 )
 
 // ReadAllToBytes reads all content from the reader into a byte array, until EOF.

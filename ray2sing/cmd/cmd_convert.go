@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/hiddify/ray2sing/ray2sing"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 
 	"github.com/spf13/cobra"
 )

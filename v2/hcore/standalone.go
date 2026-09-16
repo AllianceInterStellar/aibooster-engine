@@ -16,7 +16,7 @@ import (
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
 
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func RunStandalone(ctx context.Context, hiddifySettingPath string, configPath string, defaultConfig config.HiddifyOptions) error {

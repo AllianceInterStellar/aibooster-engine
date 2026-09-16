@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/hiddify/ray2sing/ray2sing"
-	"github.com/sagernet/sing-box/experimental/libbox"
-	_ "github.com/sagernet/sing-box/include"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	_ "github.com/AllianceInterStellar/aibooster-sing-box/include"
 )
 
 var examples = map[string][]string{

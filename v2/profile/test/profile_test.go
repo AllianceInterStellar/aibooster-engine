@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/profile"
-	"github.com/sagernet/sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
 )
 
 func TestAddByContent(t *testing.T) {

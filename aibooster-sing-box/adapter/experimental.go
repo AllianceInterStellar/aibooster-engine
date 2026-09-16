@@ -6,7 +6,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/sagernet/sing-box/hiddify/ipinfo"
+	"github.com/AllianceInterStellar/aibooster-sing-box/hiddify/ipinfo"
 	"github.com/sagernet/sing/common/observable"
 	"github.com/sagernet/sing/common/varbin"
 )

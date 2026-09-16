@@ -8,8 +8,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/sagernet/sing-box/experimental/libbox"
-	T "github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func CheckUrlAndJson(url string, expectedJSON string, t *testing.T) {

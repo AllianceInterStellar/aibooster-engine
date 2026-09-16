@@ -3,7 +3,7 @@ package rule
 import (
 	"strings"
 
-	"github.com/sagernet/sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
 	"github.com/sagernet/sing/common/domain"
 )
 

@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	T "github.com/sagernet/sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 // HysteriaURLData holds the parsed data from a Hysteria URL.

@@ -4,7 +4,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/sagernet/sing-box/dns/transport/hosts"
+	"github.com/AllianceInterStellar/aibooster-sing-box/dns/transport/hosts"
 
 	"github.com/stretchr/testify/require"
 )

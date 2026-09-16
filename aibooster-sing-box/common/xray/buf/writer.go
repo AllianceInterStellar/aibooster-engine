@@ -5,9 +5,9 @@ import (
 	"net"
 	"sync"
 
-	"github.com/sagernet/sing-box/common/xray"
-	"github.com/sagernet/sing-box/common/xray/errors"
-	"github.com/sagernet/sing-box/common/xray/stats"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/errors"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/stats"
 )
 
 // BufferToBytesWriter is a Writer that writes alloc.Buffer into underlying writer.

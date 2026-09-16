@@ -6,9 +6,9 @@ import (
 	"os"
 	"time"
 
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/daemon"
-	"github.com/sagernet/sing-box/option"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/daemon"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 
 	hcommon "github.com/AllianceInterStellar/aibooster-engine/v2/hcommon"
 	"github.com/AllianceInterStellar/aibooster-engine/v2/hcore"

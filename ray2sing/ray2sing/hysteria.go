@@ -3,7 +3,7 @@ package ray2sing
 import (
 	"strconv"
 
-	T "github.com/sagernet/sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func HysteriaSingbox(hysteriaURL string) (*T.Outbound, error) {

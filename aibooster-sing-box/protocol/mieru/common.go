@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	mierupb "github.com/enfein/mieru/v3/pkg/appctl/appctlpb"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func validateMieruTransport(transport []option.MieruPortBinding) error {

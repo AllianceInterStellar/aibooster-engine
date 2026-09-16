@@ -3,7 +3,7 @@ package cloudflare
 import (
 	"time"
 
-	C "github.com/sagernet/sing-box/constant"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
 )
 
 type IdentityAccount struct {

@@ -11,7 +11,7 @@ import (
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
 	"golang.org/x/net/proxy"
 
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func getRandomAvailblePort() uint16 {

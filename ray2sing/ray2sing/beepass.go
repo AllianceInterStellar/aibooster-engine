@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strings"
 
-	T "github.com/sagernet/sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 type beepassData struct {

@@ -1,8 +1,8 @@
 package ray2sing
 
 import (
-	C "github.com/sagernet/sing-box/constant"
-	T "github.com/sagernet/sing-box/option"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func PsiphonSingbox(url string) (*T.Outbound, error) {

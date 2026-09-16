@@ -2,8 +2,8 @@ package hcore
 
 import (
 	"github.com/AllianceInterStellar/aibooster-engine/v2/service_manager"
-	daemon "github.com/sagernet/sing-box/daemon"
-	"github.com/sagernet/sing-box/log"
+	daemon "github.com/AllianceInterStellar/aibooster-sing-box/daemon"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 )
 
 var _ log.PlatformWriter = (*LogInterface)(nil)

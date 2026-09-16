@@ -3,8 +3,8 @@
 package include
 
 import (
-	"github.com/sagernet/sing-box/adapter/endpoint"
-	"github.com/sagernet/sing-box/protocol/awg"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter/endpoint"
+	"github.com/AllianceInterStellar/aibooster-sing-box/protocol/awg"
 )
 
 func registerAwgEndpoint(registry *endpoint.Registry) {

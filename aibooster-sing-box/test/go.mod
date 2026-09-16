@@ -2,9 +2,9 @@ module test
 
 go 1.24.7
 
-require github.com/sagernet/sing-box v0.0.0
+require github.com/AllianceInterStellar/aibooster-sing-box v0.0.0
 
-replace github.com/sagernet/sing-box => ../
+replace github.com/AllianceInterStellar/aibooster-sing-box => ../
 
 require (
 	github.com/docker/docker v27.3.1+incompatible

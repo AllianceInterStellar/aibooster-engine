@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/sagernet/sing-box/experimental/libbox"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/libbox"
 	"google.golang.org/grpc"
 )
 

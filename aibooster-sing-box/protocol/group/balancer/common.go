@@ -7,8 +7,8 @@ import (
 	"net/netip"
 	"sort"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/monitoring"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/monitoring"
 	"github.com/sagernet/sing/common"
 	N "github.com/sagernet/sing/common/network"
 	"golang.org/x/net/publicsuffix"

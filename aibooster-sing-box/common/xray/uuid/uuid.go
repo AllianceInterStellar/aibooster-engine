@@ -6,7 +6,7 @@ import (
 	"crypto/sha1"
 	"encoding/hex"
 
-	"github.com/sagernet/sing-box/common/xray"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

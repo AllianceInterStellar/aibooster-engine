@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sagernet/sing-box/daemon"
+	"github.com/AllianceInterStellar/aibooster-sing-box/daemon"
 	M "github.com/sagernet/sing/common/metadata"
 )
 

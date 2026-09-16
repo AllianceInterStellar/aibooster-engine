@@ -5,10 +5,10 @@ package v2ray
 import (
 	"context"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/tls"
-	"github.com/sagernet/sing-box/option"
-	"github.com/sagernet/sing-box/transport/v2raygrpclite"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/tls"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/transport/v2raygrpclite"
 	"github.com/sagernet/sing/common/logger"
 	M "github.com/sagernet/sing/common/metadata"
 	N "github.com/sagernet/sing/common/network"

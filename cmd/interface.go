@@ -8,9 +8,9 @@ import (
 
 	"context"
 
-	"github.com/sagernet/sing-box/experimental/deprecated"
-	"github.com/sagernet/sing-box/include"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/experimental/deprecated"
+	"github.com/AllianceInterStellar/aibooster-sing-box/include"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 	"github.com/sagernet/sing/service"
 	"github.com/sagernet/sing/service/filemanager"
 

@@ -3,7 +3,7 @@ package task
 import (
 	"context"
 
-	"github.com/sagernet/sing-box/common/xray/signal/semaphore"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/signal/semaphore"
 )
 
 // OnSuccess executes g() after f() returns nil.

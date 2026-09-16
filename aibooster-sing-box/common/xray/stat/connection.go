@@ -3,7 +3,7 @@ package stat
 import (
 	"net"
 
-	"github.com/sagernet/sing-box/common/xray/stats"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/stats"
 )
 
 type Connection interface {

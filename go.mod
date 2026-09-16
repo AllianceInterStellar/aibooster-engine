@@ -258,7 +258,7 @@ require (
 
 require (
 	github.com/hiddify/ray2sing v0.0.0-20260209214534-63c82f8c23a6
-	github.com/sagernet/sing-box v1.13.0
+	github.com/AllianceInterStellar/aibooster-sing-box v1.13.0
 	github.com/xmdhs/clash2singbox v0.1.4
 	gopkg.in/yaml.v3 v3.0.1
 )
@@ -275,7 +275,7 @@ replace github.com/ameshkov/dnscrypt/v2 => github.com/shtorm-7/dnscrypt/v2 v2.4.
 
 replace github.com/hiddify/ray2sing => ./ray2sing
 
-replace github.com/sagernet/sing-box => ./aibooster-sing-box
+replace github.com/AllianceInterStellar/aibooster-sing-box => ./aibooster-sing-box
 
 replace github.com/sagernet/wireguard-go => ./aibooster-sing-box/replace/wireguard-go
 

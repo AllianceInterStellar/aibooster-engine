@@ -1,7 +1,7 @@
 package sniff
 
 import (
-	"github.com/sagernet/sing-box/common/ja3"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/ja3"
 )
 
 const (

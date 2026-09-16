@@ -1,6 +1,6 @@
 package balancer
 
-import "github.com/sagernet/sing-box/adapter"
+import "github.com/AllianceInterStellar/aibooster-sing-box/adapter"
 
 type Strategy interface {
 	UpdateOutboundsInfo(outbounds map[string]*adapter.URLTestHistory) (changed bool)

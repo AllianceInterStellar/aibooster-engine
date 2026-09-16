@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package experimental.v2rayapi;
-option go_package = "github.com/sagernet/sing-box/experimental/v2rayapi";
+option go_package = "github.com/AllianceInterStellar/aibooster-sing-box/experimental/v2rayapi";
 
 message GetStatsRequest {
   // Name of the stat counter.

@@ -185,7 +185,7 @@ func determineCorePath(pkgInfo *buildinfo.BuildInfo, pkgType string) (string, bo
 		}
 		return "", false
 	case androidVPNCoreTypeSingBox:
-		return determineCorePathForPkgs(pkgInfo, []string{"github.com/sagernet/sing-box"}, []string{"sing-box"})
+		return determineCorePathForPkgs(pkgInfo, []string{"github.com/AllianceInterStellar/aibooster-sing-box"}, []string{"sing-box"})
 	case androidVPNCoreTypeWireGuard:
 		return determineCorePathForPkgs(pkgInfo, []string{"golang.zx2c4.com/wireguard"}, []string{"wireguard"})
 	default:

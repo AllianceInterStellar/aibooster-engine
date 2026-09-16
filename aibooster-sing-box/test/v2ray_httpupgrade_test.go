@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/option"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 func TestV2RayHTTPUpgrade(t *testing.T) {

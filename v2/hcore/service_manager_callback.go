@@ -2,7 +2,7 @@ package hcore
 
 import (
 	"github.com/AllianceInterStellar/aibooster-engine/v2/service_manager"
-	"github.com/sagernet/sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
 )
 
 type hiddifyMainServiceManager struct{}

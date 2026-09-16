@@ -2,7 +2,7 @@ package hcore
 
 import (
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
-	"github.com/sagernet/sing-box/log"
+	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 )
 
 func errorWrapper(state MessageType, err error) (*CoreInfoResponse, error) {

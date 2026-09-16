@@ -5,12 +5,12 @@ package group
 // 	"sync"
 // 	"time"
 
-// 	"github.com/sagernet/sing-box/log"
+// 	"github.com/AllianceInterStellar/aibooster-sing-box/log"
 
-// 	"github.com/sagernet/sing-box/adapter"
-// 	"github.com/sagernet/sing-box/common/urltest"
-// 	C "github.com/sagernet/sing-box/constant"
-// 	"github.com/sagernet/sing-box/hiddify/ipinfo"
+// 	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+// 	"github.com/AllianceInterStellar/aibooster-sing-box/common/urltest"
+// 	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+// 	"github.com/AllianceInterStellar/aibooster-sing-box/hiddify/ipinfo"
 // 	"github.com/sagernet/sing/common"
 // 	"github.com/sagernet/sing/common/batch"
 // 	N "github.com/sagernet/sing/common/network"

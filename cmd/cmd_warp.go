@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/AllianceInterStellar/aibooster-engine/v2/config"
-	T "github.com/sagernet/sing-box/option"
+	T "github.com/AllianceInterStellar/aibooster-sing-box/option"
 	"github.com/sagernet/wireguard-go/hiddify"
 	"github.com/spf13/cobra"
 )

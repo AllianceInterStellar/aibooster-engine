@@ -3,8 +3,8 @@ package config
 import (
 	"fmt"
 
-	C "github.com/sagernet/sing-box/constant"
-	"github.com/sagernet/sing-box/option"
+	C "github.com/AllianceInterStellar/aibooster-sing-box/constant"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 )
 
 type outboundMap map[string]interface{}

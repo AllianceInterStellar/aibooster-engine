@@ -12,7 +12,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/sagernet/sing-box/common/badversion"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/badversion"
 	"github.com/sagernet/sing/common/control"
 	E "github.com/sagernet/sing/common/exceptions"
 	"github.com/sagernet/sing/common/shell"

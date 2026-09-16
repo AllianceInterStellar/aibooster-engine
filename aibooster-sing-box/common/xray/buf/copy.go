@@ -4,8 +4,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/sagernet/sing-box/common/xray/errors"
-	"github.com/sagernet/sing-box/common/xray/signal"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/errors"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/xray/signal"
 	E "github.com/sagernet/sing/common/exceptions"
 )
 

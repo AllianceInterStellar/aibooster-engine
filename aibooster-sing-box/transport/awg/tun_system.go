@@ -8,9 +8,9 @@ import (
 
 	awgTun "github.com/amnezia-vpn/amneziawg-go/tun"
 
-	"github.com/sagernet/sing-box/adapter"
-	"github.com/sagernet/sing-box/common/dialer"
-	"github.com/sagernet/sing-box/option"
+	"github.com/AllianceInterStellar/aibooster-sing-box/adapter"
+	"github.com/AllianceInterStellar/aibooster-sing-box/common/dialer"
+	"github.com/AllianceInterStellar/aibooster-sing-box/option"
 	tun "github.com/sagernet/sing-tun"
 	"github.com/sagernet/sing/common"
 	"github.com/sagernet/sing/common/exceptions"
