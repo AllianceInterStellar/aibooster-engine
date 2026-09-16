@@ -15,11 +15,20 @@ This source has been **modified by AllianceInterStellar**, most recently on **20
 The changes are summarised in README.md under "Our changes" and are visible in this
 repository's history.
 
-Upstream, unmodified, is:
+## Where the code came from
 
-- hiddify-core v4.1.0 — https://github.com/hiddify/hiddify-core
-- hiddify-sing-box at `0a02b772`, itself derived from sing-box —
-  https://github.com/SagerNet/sing-box
+This tree began as, and still derives from:
+
+- **hiddify-core** v4.1.0 — https://github.com/hiddify/hiddify-core — GPL-3.0 with
+  additional terms under section 7
+- **hiddify-sing-box** at `0a02b772`, itself derived from **sing-box** —
+  https://github.com/SagerNet/sing-box — GPL-3.0-or-later
+
+Full licence text: https://www.gnu.org/licenses/gpl-3.0.html
+
+Their submodules are checked in here as plain directories rather than left as git
+submodules, so the tree builds from a clone alone; the commits they were taken from are in
+`SUBMODULE-COMMITS.txt`. What we changed is listed in [README.md](README.md).
 
 ## What we hold, and what we do not
 

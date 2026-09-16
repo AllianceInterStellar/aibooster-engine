@@ -4,21 +4,13 @@ This repository is the **complete corresponding source** for the tunnelling engi
 Booster distributes as `aibooster-core`. It exists so that anyone who receives one of those
 binaries can rebuild it, which GPL-3.0 requires of us.
 
-It is not upstream. It is upstream **plus our changes**, and it is published under the same
-licence as the code it derives from.
+Everything builds from a clone and a Go toolchain — there are no submodules to initialise.
 
-## Where it comes from
+Where the code originally came from, what it is licensed under, and the modification notice
+GPL-3.0 requires are in **[COPYRIGHT.md](COPYRIGHT.md)**, which is where those notices
+belong. The commits the vendored directories were taken from are in `SUBMODULE-COMMITS.txt`.
 
-- [hiddify-core](https://github.com/hiddify/hiddify-core) v4.1.0 — GPL-3.0 with additional
-  terms under section 7
-- [hiddify-sing-box](https://github.com/hiddify/hiddify-sing-box) at `0a02b772`, itself
-  derived from [sing-box](https://github.com/SagerNet/sing-box) — GPL-3.0-or-later
-
-Submodules are checked in as plain directories rather than left as git submodules, so that
-this tree builds with nothing but a clone and a Go toolchain. The submodule commits the
-tree was taken from are recorded in `SUBMODULE-COMMITS.txt`.
-
-## Our changes
+## What we changed
 
 - `v2/config/builder.go` — a rule-set base URL of our own, and a default balancer strategy
 - `aibooster-sing-box/experimental/clashapi/server.go` — the Clash API's history store is
@@ -39,13 +31,10 @@ produces, and every string the program prints at a user.
 Two things deliberately keep upstream's names, because changing them would break something
 rather than rebrand it:
 
-- **`github.com/sagernet/...` import paths** (5,955 of them). That is another project's
-  module identity, not a label — the code resolves those imports through a `replace`
-  directive pointing at the vendored directory. Renaming them would mean hard-forking
-  sing-box's own module, and nothing would compile until every last one matched.
-- **`github.com/sagernet/...` for everything except sing-box itself** — sing-dns, sing-tun,
-  gvisor, cronet-go and the rest are genuinely other people's modules, pulled from their own
-  repositories. Only the engine we vendor and modify carries our name.
+- **Third-party module identities.** `github.com/sagernet/...` — sing-dns, sing-tun, gvisor,
+  cronet-go and the rest — are other people's modules, pulled from their own repositories. A
+  module path is an identity, not a label: renaming one does not rename the project, it just
+  stops Go from finding it. The one engine we vendor and modify does carry our name.
 - **The descriptor blobs inside three `.pb.go` files.** Protobuf's generated descriptor is a
   string constant in which every path is preceded by a length byte, so replacing a path with
   a longer one leaves the length stale and the program panics at package init with
