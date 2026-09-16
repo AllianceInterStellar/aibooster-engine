@@ -1,0 +1,8 @@
+Commits the vendored directories were taken from.
+
+hiddify-core                      v4.1.0 (upstream tag) + local changes
+hiddify-sing-box                  0a02b7729f6a211436bb8bdcd8696c283eb27767 + local changes
+hiddify-sing-box/replace/psiphon-quic-go   47042a7c2475c081b370b8c9da2c22525774b27b
+hiddify-sing-box/replace/psiphon-tls       4af85c2fb9f25576c15ccdb71d8299581dcd47fd
+hiddify-sing-box/replace/tailscale         788aa623edebf3e9918919cee4c590b177c61ec4
+hiddify-sing-box/replace/wireguard-go      b12022450359150cfb54790bc7316dee899e2336

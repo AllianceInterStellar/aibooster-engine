@@ -1,0 +1,84 @@
+{
+  "log": {
+    "level": "error"
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "local",
+        "tag": "default"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen_port": 7897
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "vless",
+      "tag": "vless-out",
+      "server": "example.com",
+      "server_port": 443,
+      "uuid": "3179dce2-2ff9-413c-85b4-c1d53ed41668",
+      "tls": {
+        "enabled": true,
+        "server_name": "example.com",
+        "alpn": "h2" // h3 for QUIC
+      },
+      "transport": {
+        "type": "xhttp",
+        "mode": "stream-up",
+        "host": "example.com",
+        "path": "/xhttp",
+        "domain_strategy": "prefer_ipv4",
+        "xmux": {
+          "max_concurrency": "0-1",
+          "max_connections": "0-1",
+          "c_max_reuse_times": "0-1",
+          "h_max_request_times": "0-1",
+          "h_max_reusable_secs": "0-1",
+          "h_keep_alive_period": 60
+        },
+        "download": {
+          "host": "example.com",
+          "path": "/xhttp",
+          "domain_strategy": "prefer_ipv4",
+          "x_padding_bytes": "0-0",
+          "sc_max_each_post_bytes": "0-0",
+          "sc_min_posts_interval_ms": "0-0",
+          "sc_stream_up_server_secs": "0-0",
+          "xmux": {
+            "max_concurrency": "0-1",
+            "max_connections": "0-1",
+            "c_max_reuse_times": "0-1",
+            "h_max_request_times": "0-1",
+            "h_max_reusable_secs": "0-1",
+            "h_keep_alive_period": 60
+          },
+          "server": "example.com",
+          "server_port": 443,
+          "tls": {
+            "enabled": true,
+            "server_name": "example.com",
+            "alpn": "h2" // h3 for QUIC
+          },
+          "detour": "direct"
+        }
+      },
+      "packet_encoding": ""
+    }
+  ],
+  "route": {
+    "final": "vless-out",
+    "default_domain_resolver": "default",
+    "auto_detect_interface": true
+  }
+}

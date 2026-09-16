@@ -1,0 +1,6 @@
+bin/
+build/
+*.dylib
+*.dll
+*.so
+aibooster-core
