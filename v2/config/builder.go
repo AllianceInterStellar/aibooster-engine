@@ -22,7 +22,9 @@ import (
 )
 
 const (
-	RuleSetBaseURL = "https://diya68e2m2604.cloudfront.net/geo/rule-set"
+	// Served by the AI Booster backend. The address before it, diya68e2m2604.cloudfront.net/geo/rule-set,
+	// forwards here, so engines built with it keep working.
+	RuleSetBaseURL = "https://awsapi.allianceinterstellar.com/aibooster/geo/rule-set"
 
 	DNSRemoteTag         = "dns-remote"
 	DNSRemoteTagFallback = "dns-remote-fallback"
